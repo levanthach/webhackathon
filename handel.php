@@ -24,8 +24,13 @@
 			}
 		}
 	 	// thong bao qua trinh luu
-	 	if ('$addmember')
-	        echo "Quá trình đăng ký thành công !";
+	 	if ('$addmember') {
+	        echo '<script language="javascript">';
+			echo 'alert("message successfully sent")';
+			echo '</script>';
+			sleep(3);
+	        header('Location: index.php');
+	 	}
 	    else
 	        echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='register.php'>Thử lại</a>";
  ?>

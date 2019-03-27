@@ -21,7 +21,7 @@
 			else {
 				// Tien hanh luu ten dang nhap vao session de tien xu ly sau nay	
 				$_SESSION['username'] = $username;
-				echo "Đăng nhập thành công !";
+				header('Location: user.php');
 				// Thực thi hành động sau khi lưu thông tin vào session                 
 			}
 		}
