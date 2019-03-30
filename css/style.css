@@ -38,7 +38,7 @@
 /*-- Index-Page-Styling --*/
 
 body {
-	background: url("../images/b2.jpg");
+	background: url("../images/bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -614,7 +614,7 @@ input[type="checkbox"] {
 	.aitssendbuttonw3ls p {
 		float: none;
 		text-align: center;
-		font-size: 14px;
+		font-size: 12px;
 		margin-top: 20px;
 	}
 	.aitssendbuttonw3ls p a,.aitssendbuttonw3ls p a:hover {

@@ -16,12 +16,15 @@
 			$query = mysqli_query($conn,$sql);
 			$num_rows = mysqli_num_rows($query);
 			if ($num_rows == 0){
-				echo "Tên đăng nhập hoặc mật khẩu không chính xác";
+				echo '<script language="javascript"> ';
+				echo 'alert("Tên tài khoản hoặc mật khẩu không chính xác")';
+				echo '</script>';
+				include "index.php";
 			}
 			else {
 				// Tien hanh luu ten dang nhap vao session de tien xu ly sau nay	
 				$_SESSION['username'] = $username;
-				echo "Đăng nhập thành công !";
+				header('Location: user.php');
 				// Thực thi hành động sau khi lưu thông tin vào session                 
 			}
 		}
